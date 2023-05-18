@@ -1,0 +1,15 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    clear: both;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}

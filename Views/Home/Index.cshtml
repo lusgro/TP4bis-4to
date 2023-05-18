@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/css/index.css" />
+
+@foreach (var pais in ViewBag.listaPaises)
+{
+    <div><a href='@Url.Action("DetallePais", new { id = pais.id })'><img src="/images/@pais.imgBandera"></a></div>
+}

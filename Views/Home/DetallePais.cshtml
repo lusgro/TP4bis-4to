@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "DetallePais";
+}
+
+<link rel="stylesheet" href="~/css/detallePais.css">
+
+<a href='@Url.Action("Index")'>Volver al menu</a>
+
+<audio autoplay>
+  <source src="/audio/@ViewBag.Pais.audioHimno" type="audio/mp3">
+</audio>
+
+<div>
+    <main>
+        <img src="/images/@ViewBag.Pais.imgBandera">
+        <h1>@ViewBag.Pais.nombre</h1>
+    </main>
+    <section>
+        <p><b>Poblacion: </b>@ViewBag.Pais.poblacion millones</p>
+        <p>Algunos atractivos turisticos de @ViewBag.Pais.nombre son @ViewBag.Pais.atractivosTuristicos</p>
+        <p>Se independizo el @ViewBag.Pais.fechaIndependencia.ToShortDateString()</p>
+    </section>
+</div>
